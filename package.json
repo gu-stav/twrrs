@@ -1,0 +1,27 @@
+{
+  "name": "twrrs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavpursche/twrrs.git"
+  },
+  "author": "Gustav Pursche <pursche@posteo.de>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gustavpursche/twrrs/issues"
+  },
+  "homepage": "https://github.com/gustavpursche/twrrs#readme",
+  "dependencies": {
+    "bluebird": "^3.3.1",
+    "express": "^4.13.4",
+    "lodash": "^4.3.0",
+    "rss": "^1.2.1",
+    "twit": "^2.2.2",
+    "twitter-text": "^1.13.3"
+  }
+}

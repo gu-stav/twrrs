@@ -4,6 +4,8 @@ const client = require('./lib/client');
 const credentials = require('./lib/credentials');
 const feed = require('./lib/feed');
 const express = require('express');
+const Promise = require('bluebird');
+const user = require('./lib/user');
 
 const settings = {
   port: 3000,
@@ -13,8 +15,16 @@ const settings = {
 let app = express();
 
 app.get('/rss/', function(req, res) {
-  client.askFor(req.query, settings.credentials)
-    .then(feed.create)
+  const userData = user.data(req.query);
+
+  Promise.join(
+    client.askFor(req.query, settings.credentials),
+    client.askFor(userData, settings.credentials),
+    function(data, user) {
+      return [data, user];
+    }
+  )
+    .spread(feed.create)
     .spread(feed.addItems)
     .spread(feed.getXML)
     .then(function(xmlStr) {

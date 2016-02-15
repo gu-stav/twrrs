@@ -22,6 +22,7 @@
     "lodash": "^4.3.0",
     "rss": "^1.2.1",
     "twit": "^2.2.2",
-    "twitter-text": "^1.13.3"
+    "twitter-text": "^1.13.3",
+    "winston": "^2.1.1"
   }
 }

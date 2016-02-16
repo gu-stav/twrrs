@@ -8,7 +8,7 @@ const Promise = require('bluebird');
 const user = require('./lib/user');
 
 const settings = {
-  port: 3000,
+  port: 4000,
   credentials: credentials.read(process.env),
 };
 

@@ -1,0 +1,20 @@
+doctype html
+html(lang=en)
+  head
+    title Generate RSS Feeds out of Twitter API
+
+  body
+    h1 Generate RSS Feeds out of the twitter API
+
+    form(action="/rss/", method="get")
+      div
+        label Username
+          input(name="screen_name", placeholder="screen_name", required)
+      div
+        label Count
+          input(name="count", placeholder="count", value="200")
+      div
+        label Exclude replies
+          input(name="exclude_replies", type="checkbox", value="true")
+      div
+        button(type="submit") Generate

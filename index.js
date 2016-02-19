@@ -13,6 +13,11 @@ const settings = {
 };
 
 let app = express();
+app.set('view engine', 'jade');
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
 
 app.get('/rss/', function(req, res) {
   const userData = user.data(req.query);

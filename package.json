@@ -17,15 +17,15 @@
   },
   "homepage": "https://github.com/gustavpursche/twrrs#readme",
   "dependencies": {
-    "bluebird": "^3.3.3",
-    "express": "^4.13.4",
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
     "jade": "^1.11.0",
-    "lodash": "^4.6.1",
-    "moment": "^2.11.2",
-    "rss": "^1.2.1",
-    "sequelize": "^3.19.3",
-    "sqlite3": "^3.1.1",
-    "twit": "^2.2.2",
-    "twitter-text": "^1.13.4"
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "rss": "^1.2.2",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.1",
+    "twit": "^2.2.11",
+    "twitter-text": "^2.0.4"
   }
 }
